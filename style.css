@@ -1,0 +1,125 @@
+body {
+    background-color: #111;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    font-size: larger;
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        font-size: large;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 576px) {
+    body {
+        font-size: small;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    background-color: rgb(246, 87, 29);
+    box-shadow: 0 0 .6em 0 rgba(250, 90, 30, 0.9);
+    border-radius: 0.5em;
+    width: 60%;
+    max-width: 600px;
+    margin: 3% auto 0 auto;
+}
+
+.dark {
+    background-color: #ff3200;
+}
+
+@media screen and (max-width: 572px) {
+    .container {
+        width: 94%;
+    }
+}
+
+#header {
+    text-align: center;
+    background-color: #000;
+    color: rgba(220,220,255, 1);
+    width: 98%;
+    margin: 1% auto;
+    font-size: larger;
+    border-radius: 0.5em;
+    transform: rotate3d(1, 0, 0, 10deg);
+    z-index: 1;
+}
+
+#header h1 {
+    text-shadow: 0px 0px 35px rgba(220,220,255, 1);
+    letter-spacing: 1px;
+}
+
+#exp {
+    overflow: auto;
+    letter-spacing: 1px;
+}
+
+/*rgba(255,160,90,1)*/
+#result-container {
+    color: rgb(196, 205, 255);
+    width: 98%;
+    margin: 1% auto;
+    font-size: 1.5em;
+    font-weight: 550;
+    padding: 0px 5px;
+    border-radius: 0.5em;
+    text-align: right;
+}
+
+#result {
+    font-size: 1.1em;
+    color: #aaa;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 96%;
+    margin: 3% auto;
+    border-collapse: collapse;
+}
+
+.items {
+    padding: 0.5em;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10em;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+.items:hover {
+    opacity: 0.8;
+    background-color: rgb(202, 43, 3);
+    transition: all 0.5s;
+}
+
+.items:active {
+    font-weight: 500;
+    background-color: rgb(220,220,255)
+}
+
+#zero {
+    grid-column: 1/ span 2;
+}

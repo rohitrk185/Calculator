@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="calculator_icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>CALCULATOR</h1>
+        </div>
+        <div id="result-container">
+            <h4 id="exp">0</h4>
+            <h4 id="result" class="small"></h4>
+        </div>
+        <div class="grid-container">
+            <span class="items dark" id="clear" data-value="ac">AC</span>
+            <span class="items dark" id="plus-minus" data-value="sign">+/-</span>
+            
+            <span class="items dark" id="modulo" data-value="%">%</span>
+            <span class="items dark" id="divide" data-value="/">÷</span>
+            <span class="items" id="seven" data-value="7">7</span>
+            <span class="items" id="eight" data-value="8">8</span>
+            <span class="items" id="nine" data-value="9">9</span>
+            <span class="items dark" id="multiply" data-value="*">x</span>
+            <span class="items" id="four" data-value="4">4</span>
+            <span class="items" id="five" data-value="5">5</span>
+            <span class="items" id="six" data-value="6">6</span>
+            <span class="items dark" id="subtract" data-value="-">-</span>
+            <span class="items" id="one" data-value="1">1</span>
+            <span class="items" id="two" data-value="2">2</span>
+            <span class="items" id="three" data-value="3">3</span>
+            <span class="items dark" id="add" data-value="+">+</span>
+            <span class="items" id="zero" data-value="0">0</span>
+            <span class="items" id="decimal" data-value=".">.</span>
+            <span class="items dark" id="equal" style="color: #fff;" data-value="=">=</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
